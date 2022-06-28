@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- cdn axios -->
+    
+</head>
+<body>
+    
+
+    <script>
+        axios.get('http://10.15.20.25:8290/api/appeals?page=6&per_page=32' , {
+            Headers:{
+                ['Authorization']: `Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTAuMTUuMjAuMjU6ODI5MC9hcGkvYXV0aC9sb2dpbiIsImlhdCI6MTY1NTE5NDY3OCwiZXhwIjoxNjU1MTk4Mjc4LCJuYmYiOjE2NTUxOTQ2NzgsImp0aSI6ImRTOWdjOGtoZ1J6U2pJMDQiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5fZ_3fLaqCqpLtcP0hlkywvXqtl5mTqsZ9lKLa_yxIM`
+            }
+        })
+        .then(function(response){
+            console.log(response);
+        })
+        .catch(function(error){
+            console.log(error);
+        });
+    </script>
+</body>
+</html>
